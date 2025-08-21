@@ -1,0 +1,16 @@
+//Assuntos:
+- Banco de dados
+    - tabelas
+    - inserção
+    - atualização
+    - exclusão
+    - pesquisa
+    - filtros
+    - ordenações
+    - agrupamentos
+- Vetores
+- Matrizes
+- Funções de estruturas de dados
+- Métodos e procedimentos
+
+- Orientação a objeto

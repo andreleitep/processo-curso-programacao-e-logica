@@ -1,0 +1,18 @@
+//Entrada de dados:
+    Ler Distância percorrida e total de combustível gasto
+
+//Processamento:
+    Calcular a média de combustível gasto por unidade de distância
+
+//Saída:
+    Mostrar a média
+
+===========================================
+Algoritmo:
+
+Leia Dist_total
+Leia Comb_total
+
+Media = Dist_total / Comb_total
+
+Escreva Media

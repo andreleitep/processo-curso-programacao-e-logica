@@ -1,0 +1,20 @@
+//Entrada de dados:
+    PrimeiroNumero
+    SegundoNumero
+//Processamento:
+    Somar NumeroUm com NumeroDois
+//Saída:
+    O resultado da soma
+
+=================================
+Algoritmo:
+
+//Entrada de dados
+Ler PrimeiroNumero
+Ler SegundoNumero
+
+//Processamento
+soma = PrimeiroNumero + SegundoNumero
+
+//Saída
+Escrever soma

@@ -1,0 +1,21 @@
+//Entrada de dados:
+    Ler p1, p2 e p3
+
+//Processamento:
+    Calcular a média das 3 notas
+
+//Saída:
+    Mostrar se aprovado ou reprovado
+
+====================================
+Algoritmo:
+Leia p1
+Leia p2
+Leia p3
+
+Media = (p1 + p2 + p3) / 3
+
+Se Media >= 7 então
+    Escreva "Aprovado"
+Senão
+    Escreva "Reprovado"
