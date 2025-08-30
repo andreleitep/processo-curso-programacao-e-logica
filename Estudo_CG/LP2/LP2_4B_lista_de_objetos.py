@@ -1,6 +1,10 @@
-from LP2_4A_orientacao_a_objetos import cadastroCliente
+class cadastroCliente:
+    def __init__(self, nome, rg, idade):
+        self.nome = nome
+        self.rg = rg
+        self.idade = idade
 
-clientes = ['','','']
+clientes = ['', '', '']
 opcao_menu = 0
 
 def menu():
@@ -11,7 +15,9 @@ def menu():
     print("    3 - Sair")
     opcao_menu = input("Digite: ")
 
+
 menu()
+flag = 0
 
 while opcao_menu != "3":
     match opcao_menu:
@@ -23,16 +29,21 @@ while opcao_menu != "3":
                     idade = int(input("Idade: "))
                     client = cadastroCliente(nome, rg, idade)
                     clientes[i] = client
-                    print(f'Cliente cadastrado na posição {i+1}')
+                    print(f'Cliente cadastrado na posição {i + 1}')
                     break
         case "2":
             pesq = input("Digite o que quer pesquisar: ")
             for i in range(3):
                 if clientes[i]:
                     if clientes[i].nome == pesq:
-                        print(f"{pesq} encontrado na posição {i+1}.")
-                        break
+                        print(f"'{pesq}' encontrado na posição {i + 1}.")
+                        flag = 1
+
+            if not flag:
                 print(f"'{pesq}' não encontrado.")
+    flag = 0
+    menu()
 
 for i in range(len(clientes)):
-    print(f'{clientes[i].nome} do RG {clientes[i].rg} tem {clientes[i].idade} anos')
+    if clientes[i]:
+        print(f'{clientes[i].nome} do RG {clientes[i].rg} tem {clientes[i].idade} anos')
